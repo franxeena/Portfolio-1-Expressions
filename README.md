@@ -10,51 +10,42 @@ This program calculates the weighted average grade of a student using four subje
 
 The program also determines the student's academic status based on the computed average.
 
-# Student Academic Status Checker
+## Formula Used
 
-# Formula Used:
-# Average = (0.15 × Reading) + (0.35 × Math)
-#         + (0.25 × Science) + (0.25 × Language Proficiency)
+```python
+Average = (0.15 * Reading) + (0.35 * Math) + (0.25 * Science) + (0.25 * Language Proficiency)
+```
 
-print("=== Grading Scale ===")
-print("95 and above in ALL subjects -> Running for Dean's List")
-print("90 and above -> Passed")
-print("85 to 89 -> Okay")
-print("75 to 84 -> Fair")
-print("Below 75 -> Failed")
-print()
+### Grading Scale
+- All grades are 95 and above -> Running for Dean's List
+- 90 and above -> Passed
+- 85 to 89 -> Okay
+- 75 to 84 -> Fair
+- Below 75 -> Failed
 
-# Input grades
+```python
 read = float(input("Enter Grade in Reading Comprehension: "))
-math = float(input("Enter Grade in Mathematics: "))
-science = float(input("Enter Grade in Science: "))
-langprof = float(input("Enter Grade in Language Proficiency: "))
+math = int(input("Enter Grade in Mathematics: "))
+science = int(input("Enter Grade in Science: "))
+langprof = int(input("Enter Grade in Language Proficiency: "))
 
-# Compute weighted average
-average = (
-    (0.15 * read) +
-    (0.35 * math) +
-    (0.25 * science) +
-    (0.25 * langprof)
-)
+average = (0.15 * read) + (0.35 * math) + (0.25 * science) + (0.25 * langprof)
 
-# Display average
-print("\nAverage:", round(average, 2))
+print("Average:", average)
 
-# Determine academic status
 if average >= 90:
 
     if read >= 95 and math >= 95 and science >= 95 and langprof >= 95:
-        print("Status: Running for Dean's List")
+        print("Running for Dean's List")
 
     else:
-        print("Status: Passed")
+        print("Passed")
 
 elif 85 <= average < 90:
-    print("Status: Okay")
+    print("Okay")
 
 elif 75 <= average < 85:
-    print("Status: Fair")
+    print("Fair")
 
 else:
-    print("Status: Failed")
+    print("Failed")
