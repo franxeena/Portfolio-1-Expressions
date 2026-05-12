@@ -14,7 +14,7 @@ The program also determines the student's academic status based on the computed 
 
 ```python
 average = (0.15 * read) + (0.35 * math) + (0.25 * science) + (0.25 * langprof)
-
+```
 ### Grading Scale
 - All grades are 95 and above -> Running for Dean's List
 - 90 and above -> Passed
