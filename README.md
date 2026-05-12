@@ -13,7 +13,7 @@ The program also determines the student's academic status based on the computed 
 ## Formula Used
 
 ```python
-Average = (0.15 * Reading) + (0.35 * Math) + (0.25 * Science) + (0.25 * Language Proficiency)
+average = (0.15 * read) + (0.35 * math) + (0.25 * science) + (0.25 * langprof)
 ```
 
 ### Grading Scale
