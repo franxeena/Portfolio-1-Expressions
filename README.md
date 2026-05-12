@@ -50,24 +50,29 @@ print("Average:", average)
 ### If average is 90 and above
 ```python
 if average >= 90:
-
-    # Check if all subject grades are 95 and above
+```
+# Check if all subject grades are 95 and above
+```python
     if read >= 95 and math >= 95 and science >= 95 and langprof >= 95:
         print("Running for Dean's List")
-
-    # Otherwise, the student passed
+```
+# Otherwise, the student passed
+```python
     else:
         print("Passed")
-
+```
 # If average is between 85 and 89
+```python
 elif 85 <= average < 90:
     print("Okay")
-
+```
 # If average is between 75 and 84
+```python
 elif 75 <= average < 85:
     print("Fair")
-
+```
 # If average is below 75
+```python
 else:
     print("Failed")
 ```
