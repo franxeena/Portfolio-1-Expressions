@@ -23,32 +23,31 @@ average = (0.15 * read) + (0.35 * math) + (0.25 * science) + (0.25 * langprof)
 - Below 75 -> Failed
 
 
-# Input grades from the user
-# float is used for Reading Comprehension
-# int is used for the remaining subjects
+## Input grades from the user
+## float is used for Reading Comprehension
+## int is used for the remaining subjects
 ```python
 read = float(input("Enter Grade in Reading Comprehension: "))
 math = int(input("Enter Grade in Mathematics: "))
 science = int(input("Enter Grade in Science: "))
 langprof = int(input("Enter Grade in Language Proficiency: "))
 ```
-# Compute the weighted average
-# Formula:
-# (Reading × 15%) + (Math × 35%)
-# + (Science × 25%) + (Language × 25%)
+## Compute the weighted average
+## Formula:
+### (Reading × 15%) + (Math × 35%) + (Science × 25%) + (Language × 25%)
 
 
 ```python
 average = (0.15 * read) + (0.35 * math) + (0.25 * science) + (0.25 * langprof)
 ```
-# Display the computed average
+### Display the computed average
 ```python
 print("Average:", average)
 ```
-# Determine the student's evaluation
+### Determine the student's evaluation
 
 
-# If average is 90 and above
+### If average is 90 and above
 ```python
 if average >= 90:
 
