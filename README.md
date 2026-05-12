@@ -24,9 +24,6 @@ average = (0.15 * read) + (0.35 * math) + (0.25 * science) + (0.25 * langprof)
 
 ```python
 # ==========================================
-# Student Grade Evaluation Program
-# ==========================================
-
 # Input grades from the user
 # float is used for Reading Comprehension
 # int is used for the remaining subjects
